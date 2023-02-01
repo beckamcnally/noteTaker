@@ -2,7 +2,7 @@ const express = require('express');
 const store = require('../db/store');
 const app = express()
 
-// GET "/api/notes" responds with all notes from the database
+
 app.get('/notes', (req, res) => {
   store
     .getNotes()
@@ -19,6 +19,11 @@ app.post('/notes', (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
+// app.delete('/notes', (req, res) => {
+//   store 
+//   .deleteNote(req.noteId)
+//   .then((note))
+// })
 
 
 
