@@ -44,8 +44,12 @@ class Store {
       .then(() => newNote);
   }
 
-  // deleteNote(noteId) {
-  // }
+  // deleteNote() {
+  //   return this.read().then((notes) => {
+  //     console.log(notes)
+
+  //   });
+  //  }
 };
 
 module.exports = new Store()

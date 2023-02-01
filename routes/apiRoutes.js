@@ -20,9 +20,13 @@ app.post('/notes', (req, res) => {
 });
 
 // app.delete('/notes', (req, res) => {
+//   console.log(req)
 //   store 
 //   .deleteNote(req.noteId)
-//   .then((note))
+//   .then((noteId) => {
+//     return res.json(noteId);
+//   })
+//   .catch((err) => res.status(500).json(err));
 // })
 
 
